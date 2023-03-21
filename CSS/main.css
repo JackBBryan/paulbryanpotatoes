@@ -1,0 +1,836 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+html {
+    background-color: #24252A;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    color: lightgray;
+}
+
+.center {
+    margin: 0 auto;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 40px 5%;
+    border-bottom: 3px solid #D2691E;
+}
+
+.nav-logo {
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    margin-right: auto;
+    color: #D2691E;
+}
+
+
+.main-nav ul {
+    list-style-type: none;
+}
+
+.main-nav ul li {
+    display: inline-block;
+    padding: 0px 20px;
+    font-size: 1.5rem;
+}
+
+.main-nav ul li a:hover {
+    color: #D2691E;
+    transition: 0.2s ease-in-out;
+
+}
+
+.nav-share {
+    margin-left: 5%;
+}
+
+.nav-share ul {
+    list-style-type: none;
+}
+
+.nav-share ul li {
+    display: inline-block;
+    padding: 0px 5px;
+    cursor: pointer;
+}
+
+.nav-share i {
+    font-size: 1.4rem;
+    color: #ffffff;
+}
+
+.hero {
+    width: 100%;
+    height: 850px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.7)),
+        url("../IMG/wp1885850.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-container {
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    ;
+    padding: 2em 0;
+    grid-template-columns: 1fr;
+    gap: 3em;
+}
+
+.hero-title {
+    width: 60%;
+    justify-self: center;
+    align-self: end;
+    text-align: center;
+}
+
+.hero-title h1 {
+    font-family: 'Montserrat', sans-serif;
+    color: #D2691E;
+    font-size: 3.5rem;
+}
+
+.postcode-container {
+    justify-self: center;
+    align-self: center;
+    width: 40%;
+    color: #ffffff;
+    text-align: center;
+}
+
+.postcode-container h3 {
+    font-size: 1.5rem;
+}
+
+.postcode-input {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 10px;
+    margin: 20px 0px;
+}
+
+#result a {
+    color: #D2691E;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.intro-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 700px;
+}
+
+.intro-img {
+    background-image: url("../IMG/fernanda-martinez-H2RzlOijhlQ-unsplash.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.intro-txt {
+    color: #ffffff;
+    align-self: center;
+    width: 80%;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+.intro-header {
+    margin-bottom: 20px;
+    color: #D2691E;
+    font-size: 2rem;
+}
+
+.cs {
+    background-color: #fff;
+    width: 100%;
+    ;
+    text-align: center;
+    padding: 3em 0 ;
+}
+
+.read-more {
+    padding: 15px 32px;
+    color: #D2691E;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: inline-block;
+    border: none;
+    margin-top: 50px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0 auto;
+    width: 100%;
+    align-content: space-evenly;
+    align-items: center;
+    padding: 5em;
+}
+
+.cs-title {
+    width: 100%;
+    margin: 0 auto;
+    padding: 30px 0px;
+    color: #D2691E;
+    font-size: 2rem;
+}
+
+.cs-card {
+    justify-self: center;
+    width: 80%;
+    margin: 0 auto;
+    justify-items: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding: 20px 0px;
+    margin-bottom: 20px;
+}
+
+.cs-card-text {
+    padding: 20px 16px;
+}
+
+.cs-card-text h3 {
+    margin-bottom: 20px;
+    color: #D2691E;
+    font-size: 1.5rem;
+}
+
+.button {
+    border-radius: 4px;
+    background-color: #D2691E;
+    border: none;
+    color: #ffffff;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 16px;
+    width: 220px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 36px;
+    box-shadow: 0 10px 20px -8px rgba(0, 0, 0, .7);
+}
+
+.button {
+    cursor: pointer;
+    display: block;
+    position: relative;
+    transition: 0.5s;
+    margin: 0 auto;
+}
+
+.button:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    top: 14px;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button:hover {
+    padding-right: 24px;
+    padding-left: 8px;
+}
+
+.button:hover:after {
+    opacity: 1;
+    right: 10px;
+}
+
+.cta-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    color: #ffffff;
+    height: 300px;
+}
+
+.experience {
+    display: grid;
+    background-color: #D2691E;
+    width: 100%;
+    margin: 0 auto;
+    padding: 30px 30px;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.experience h3 {
+    font-size: 2.3rem;
+    text-transform: uppercase;
+}
+
+.customers {
+    display: grid;
+    width: 100%;
+    margin: 0 auto;
+    padding: 30px 30px;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.customers h3 {
+    font-size: 2.3rem;
+    text-transform: uppercase;
+}
+
+.hvr-icon-forward {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.1s;
+    transition-duration: 0.1s;
+    width: 30px;
+    margin: 0 auto;
+}
+
+.hvr-icon-forward .hvr-icon {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-transition-duration: 0.1s;
+    transition-duration: 0.1s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.hvr-icon-forward:hover .hvr-icon,
+.hvr-icon-forward:focus .hvr-icon,
+.hvr-icon-forward:active .hvr-icon {
+    -webkit-transform: translateX(4px);
+    transform: translateX(4px);
+}
+
+.t-hero {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.t-hero h1 {
+    text-align: center;
+    color: #D2691E;
+    padding: 20px 0px;
+}
+
+.testimonials {
+    position: relative;
+    overflow: hidden;
+    padding: 3em 0;
+}
+
+.testimonial-title {
+    text-align: center;
+    color: #D2691E;
+    font-size: 2rem;
+}
+
+.wrapper {
+    position: relative; /* add this */
+    display: flex;
+    width: 60%;
+    min-height: 20em;
+    flex-direction: column; /* change this to column */
+    align-items: center; /* add this */
+    margin: 0 auto;
+  }
+
+.testimonial-container {
+    flex: 1;
+    width: 85%;
+    padding: 1.8em 1.2em;
+}
+
+.wrapper button {
+    font-size: 1.8em;
+    height: 2.2em;
+    width: 2.2em;
+    background-color: #ffffff;
+    position: absolute;
+    border: none;
+    color: #D2691E;
+    box-shadow: 0 0 1em rgba(1, 17, 39, 0.25);
+    cursor: pointer;
+    border-radius: 50%;
+    top: calc(50% - 1.1em); /* add this */
+  }
+  
+  button#next {
+    right: -1.1em;
+  }
+  
+  button#prev {
+    left: -1.1em;
+  }
+
+.testimonial-container p {
+    color:#ffffff;
+    text-align: center;
+    font-size: 0.9em;
+    line-height: 2em;
+    letter-spacing: 0.05em;
+}
+
+.testimonial-container img {
+    display: block;
+    margin: 1.8em auto 1.25em auto;
+    border-radius: 50%;
+    width: 4.4em;
+}
+
+.testimonial-container h3 {
+    color: #D2691E;
+    font-size: 1em;
+    text-align: center;
+}
+
+.testimonial-container h6 {
+    color: #bcc4da;
+    font-size: 0.9em;
+    letter-spacing: 0.03em;
+    font-weight: 400;
+    text-align: center;
+}
+
+@media screen and (max-width: 650px) {
+    .wrapper {
+        font-size: 14px;
+    }
+}
+
+.contact {
+    background-color: #ffffff;
+    background: #24252A;
+    padding: 3em 0 ;
+}
+
+.form-container {
+    display: grid;
+    grid-template-areas: 
+        "name name"
+        "email phone"
+        "message message"
+        "button button "        
+    ;
+    width: 100%;
+    place-items: center;
+    margin-top: 6em;
+}
+
+.name {
+    grid-area: name;
+}
+
+.email {
+    grid-area: email;
+    width: 95%;
+    justify-self: start;
+}
+
+.phone {
+    grid-area: phone;
+    width: 95%;
+    justify-self: end;
+}
+
+.message {
+    grid-area: message;
+}
+
+.submit {
+    grid-area: button; 
+    justify-self: start;
+    width: 100%;
+}
+
+input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid ~ label {
+    font-size: 0.75em;
+    color: #999;
+    top: -5px;
+    -webkit-transition: all 0.225s ease;
+    transition: all 0.225s ease;
+}
+
+.styled-input {
+    width: 100%;
+    margin-bottom: 1rem;
+    position: relative;
+    border-radius: 4px;
+}
+
+@media only screen and (max-width: 768px){
+    .styled-input {
+        width:100%;
+    }
+}
+
+.styled-input label {
+    color: #999;
+    padding: 1.3rem 30px 1rem 30px;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    -webkit-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+    pointer-events: none;
+}
+
+.styled-input.wide { 
+    width: 650px;
+    max-width: 100%;
+}
+
+input,
+textarea {
+    padding: 30px;
+    border: 0;
+    width: 100%;
+    font-size: 1rem;
+    background-color: #2d2d2d;
+    color: white;
+    border-radius: 4px;
+}
+
+input:focus,
+textarea:focus { outline: 0; }
+
+input:focus ~ span,
+textarea:focus ~ span {
+    width: 100%;
+    -webkit-transition: all 0.075s ease;
+    transition: all 0.075s ease;
+}
+
+textarea {
+    width: 100%;
+    min-height: 15em;
+}
+
+.input-container {
+    width: 650px;
+    max-width: 100%;
+    margin: 20px auto 25px auto;
+}
+
+@media (max-width: 768px) {
+    .submit-btn {
+        width:100%;
+        float: none;
+        text-align:center;
+    }
+}
+
+input[type=checkbox] + label {
+  color: #ccc;
+  font-style: italic;
+} 
+
+input[type=checkbox]:checked + label {
+  color: #f00;
+  font-style: normal;
+}
+
+.contact-container {
+    display: grid;
+    grid-template-areas: 
+        "contact-header contact-header"
+        "contact-info contact-form"
+    ;
+    place-items: center;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    width: 90%;
+    margin: auto;
+    padding: 5em;
+    border-radius: 10px;
+}
+
+.map {
+    border:none; 
+    height: 60vh;
+    margin-top: 3em;
+    width: 100%;
+  }
+  
+.contact-info {
+    display: grid;
+    grid-template-areas: 
+        "location-icon location-text"
+        "contact-icon contact-text"
+        "opening-hours-icon opening-hours-text"
+    ;
+    gap: 2em;
+}
+
+.contact-header {
+    color: #D2691E;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    grid-area: contact-header;
+    justify-self: center;
+}
+
+.location-icon {
+    text-align: center;
+    grid-area: location-icon;
+    align-self: start;
+}
+.location-text {
+    line-height: 1.5;
+    grid-area: location-text;
+}
+.location-text h3 {
+    color: #D2691E;
+}
+
+.contact-icon {
+    grid-area: contact-icon;
+    text-align: center;
+}
+
+.contact-text {
+    line-height: 1.5;
+    grid-area: contact-text;
+}
+
+.contact-text h3 {
+    color: #D2691E;
+}
+
+.opening-hours-icon {
+    grid-area: opening-hours-icon;
+    text-align: center;
+}
+
+.opening-hours-text h3 {
+    color: #D2691E;
+}
+
+.opening-hours-text {
+    line-height: 1.5;
+    grid-area: opening-hours-text;
+}
+
+.orange {
+    color: #D2691E;
+}
+
+.result {
+    margin-top: 1em;
+    font-size: 1.2em;
+}
+.fa-location-dot,.fa-business-time,.fa-message
+{
+    color: #D2691E;
+}
+@media only screen and (max-width: 926px) {
+    /*////////Hero Section///////////*/
+    .hero {
+        height: 100%;
+        padding: 3em 2em;
+        gap: 5em;
+    }
+
+    .hero-title {
+        width: 100%;
+        align-self: center;
+    }
+
+    .postcode-container {
+        align-self: start;
+        width: 100%;
+    }
+
+    .postcode-input {
+        width: 100%;
+        padding: 2rem;
+    }
+
+    .hero-button {
+        width: 100%;
+    }
+
+    /*/////////Intro Section////////*/
+
+    .intro-container {
+        grid-template-areas: 
+            "intro-txt intro-txt"
+            "intro-img intro-img"
+        ;
+        height: 100%;
+    }
+
+    .intro-img {
+        height: 40vh;
+        grid-area: intro-img;
+        width: 100%;
+    }
+
+    .intro-txt {
+        grid-area: intro-txt;
+        width: 80%;
+        padding: 3em 0;
+    }
+    /*//////////Customer Service Section///////*/
+
+    .container {
+        width: 100%;
+        grid-template-columns: 1fr;
+        padding: 3em 0;
+        gap: 1em;
+    }
+
+    /*/////////Contact Section////////*/
+
+    .contact-container {
+        width: 95%;
+        grid-template-areas: 
+            "contact-header"
+            "contact-form"
+            "contact-info"
+        ;
+        padding: 3em;
+    }
+
+    .contact-info {
+        width: 100%;
+        gap: 1em;
+    }
+
+    .form-container {
+        margin-top: 4em;
+    }
+
+    .contact-section iframe {
+        height: 40vh;
+    }
+
+    .map {
+        height: 30vh;
+    }
+
+    /*/////////Testimonial Section////////*/
+
+    .testimonials {
+        padding: 0;
+    }
+
+    .wrapper {
+        width: 80%
+    }
+}
+
+@media only screen and (max-width: 428px) {
+    .intro-txt {
+        text-align: center;
+    }
+    
+    .intro-img {
+        height: 60vh;
+    }
+
+    .cs {
+        padding: 1em 0;
+    }
+
+    .cs-title {
+        padding: 0;
+    }
+
+    .contact-container {
+        width: 100%;
+        padding: 3em 1em;
+    }
+
+    .contact-header {
+        
+    }
+
+    .contact-info {
+        grid-template-areas: 
+            "location-text"
+            "contact-text"
+            "opening-hours-text"
+        ;
+        text-align: center;
+    }
+
+    .location-icon {
+        display: none;
+    }
+
+    .contact-icon {
+        display: none;
+    }
+
+    .opening-hours-icon {
+        display: none;
+    }
+
+    .form-container {
+        grid-template-areas: 
+            "name"
+            "email"
+            "phone"
+            "message"
+            "button"
+        ;
+    }
+
+    .styled-input.wide {
+        width: 400px;
+    }
+
+    .email {
+        width: 100%;
+    }
+
+    .phone {
+        width: 100%;
+    }
+}

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Paul Bryan Potatoes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="CSS/main.css" />
+    <script
+      src="https://kit.fontawesome.com/649f1229e3.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/2.3.1/purify.min.js"
+      integrity="sha512-AD0YpO8fjG9+C9scPkldLFyL7c2KXTQmOGiwnwJb/vomg7ZQ8igZql4X4u4DskoU6y5E5BJc72S+eUjKMBkmEg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div class="nav-logo">
+        <h3>Paul Bryan Potatoes</h3>
+      </div>
+      <nav class="main-nav">
+        <ul>
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">About Us</a>
+          </li>
+          <li>
+            <a href="#">Our Products</a>
+          </li>
+          <li>
+            <a href="#">Contact Us</a>
+          </li>
+          <li>
+            <a href="#">Testimonials</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="nav-share">
+        <ul>
+          <li>
+            <i class="fa-brands fa-square-facebook"></i>
+          </li>
+          <li>
+            <i class="fa-brands fa-square-twitter"></i>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <section class="hero">
+      <div class="hero-container">
+        <div class="hero-title">
+          <h1>Delivering throughout Sussex for over 40 years!</h1>
+        </div>
+        <div class="postcode-container">
+          <h3>Do we deliver to your area?</h3>
+          <input
+            type="text"
+            id="postcode"
+            class="postcode-input"
+            name="postcode"
+            placeholder="Enter your postcode here!"
+            maxlength="8"
+          />
+          <button id="check-button" class="button hero-button">Check</button>
+          <h5 id="result" class="result"></h5>
+          <script src="https://cdn.jsdelivr.net/npm/dompurify@2.3.1/dist/purify.min.js"></script>
+          <script src="JS/check-postcode.js"></script>
+        </div>
+      </div>
+    </section>
+    <section class="intro">
+      <div class="intro-container">
+        <div class="intro-img"></div>
+        <div class="intro-txt">
+          <div class="intro-header"><h1>Paul Bryan Potatoes</h1></div>
+          <p>
+            Paul Bryan Potatoes is a small family run business based in the
+            heart of the Sussex countryside.
+          </p>
+          <p>
+            Bryan Potatoes was originally started over 40 years ago by Paul
+            Bryan and is now run by his son Dan Bryan.
+          </p>
+          <p>
+            Our business specialises in the supply of potatoes to fish and chip
+            shops, farm shops, restaurants and pubs across the South East of
+            England.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="cs">
+      <div class="cs-title">
+        <h1>Customer Service</h1>
+      </div>
+      <div class="container">
+        <div class="cs-card">
+          <span class="icon">
+            <i class="fa-solid fa-clipboard-user fa-8x"></i>
+          </span>
+          <div class="cs-card-text">
+            <h3>Experienced Staff</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure,
+              amet.
+            </p>
+          </div>
+        </div>
+        <div class="cs-card">
+          <span>
+            <i class="fa-regular fa-id-card fa-8x"></i>
+          </span>
+          <div class="cs-card-text">
+            <h3>Qualified Drivers</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure,
+              amet.
+            </p>
+          </div>
+        </div>
+        <div class="cs-card">
+          <span>
+            <i class="fa-regular fa-star fa-8x"></i>
+          </span>
+          <div class="cs-card-text">
+            <h3>Reliable Service</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure,
+              amet.
+            </p>
+          </div>
+        </div>
+        <div class="cs-card">
+          <span>
+            <i class="fa-regular fa-clock fa-8x"></i>
+          </span>
+          <div class="cs-card-text">
+            <h3>Emergency Deliveries</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure,
+              amet.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--<button class="button">
+        <span>Read More</span>
+      </button>-->
+    </section>
+    <!--<section class="cta">
+      <div class="cta-container">
+        <div class="experience">
+          <h3>Supplying Sussex for over 40 years!</h3>
+          <a href="" class="hvr-icon-forward">
+            <i class="fa fa-chevron-circle-right hvr-icon fa-3x"></i>
+          </a>
+        </div>
+        <div class="customers">
+          <h3>Don't just take our word for it, See what our customers say!</h3>
+          <a href="" class="hvr-icon-forward">
+            <i class="fa fa-chevron-circle-right hvr-icon fa-3x"></i>
+          </a>
+        </div>
+      </div>
+    </section>-->
+    <section class="contact" id="contact-section">
+      <div class="contact-container">
+        <div class="contact-header">
+          <h1>Get in touch!</h1>
+        </div>
+        <div class="contact-info">
+          <div class="location-icon">
+            <i class="fa-solid fa-location-dot fa-3x"></i>
+          </div>
+          <div class="location-text">
+            <h3>Our Address</h3>
+            <p>Unit 8a</p>
+            <p>Hooklands Farm, Lewes Rd</p>
+            <p>Scaynes Hill</p>
+            <p>RH17 7NG</p>
+          </div>
+          <div class="contact-icon">
+            <i class="fa-regular fa-message fa-3x"></i>
+          </div>
+          <div class="contact-text">
+            <h3>Our Info</h3>
+            <p><b class="orange">Tel:</b> 01444 831888</p>
+            <p><b class="orange">Email:</b> info@paulbryanpotatoes.co.uk</p>
+          </div>
+          <div class="opening-hours-icon">
+            <i class="fa-solid fa-business-time fa-3x"></i>
+          </div>
+          <div class="opening-hours-text">
+            <h3>Office Hours</h3>
+            <p><b class="orange">Mon-Fri:</b> 8am - 5pm</p>
+          </div>
+        </div>
+        <form id="contact-form">
+          <div class="form-container">
+            <div class="name">
+              <div class="styled-input wide">
+                <input type="text" name="name" id="name" required />
+                <label for="name">Name:</label>
+              </div>
+            </div>
+            <div class="email">
+              <div class="styled-input">
+                <input type="email" name="email" id="email" required />
+                <label for="email">Email:</label>
+              </div>
+            </div>
+            <div class="phone">
+              <div class="styled-input">
+                <input type="number" name="phone" id="phone" required />
+                <label for="phone">Phone:</label>
+              </div>
+            </div>
+            <div class="message">
+              <div class="styled-input wide">
+                <textarea name="message" id="message" required></textarea>
+                <label for="message">Message:</label>
+              </div>
+            </div>
+            <button class="button submit" type="submit">Send</button>
+          </div>
+        </form>
+
+        <div id="confirmation-message" style="display: none">
+          Your message has been sent. Thank you!
+        </div>
+        <script src="JS\contactform.js"></script>
+      </div>
+      <iframe src="https://snazzymaps.com/embed/473695" class="map"></iframe>
+    </section>
+    <section class="testimonials">
+      <div class="testimonials-container">
+        <div class="testimonial-title">
+          <h1>What our customers say!</h1>
+        </div>
+        <div class="wrapper">
+          <div class="testimonial-container" id="testimonial-container"></div>
+          <button id="prev">&lt;</button>
+          <button id="next">&gt;</button>
+        </div>
+        <script src="JS/testimonial-slider.js"></script>
+      </div>
+    </section>
+  </body>
+</html>
