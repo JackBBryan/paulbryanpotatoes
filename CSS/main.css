@@ -668,7 +668,9 @@ input[type=checkbox]:checked + label {
 {
     color: #D2691E;
 }
-@media only screen and (max-width: 926px) {
+
+@media only screen and (max-width: 428px) {
+    
     /*////////Hero Section///////////*/
     .hero {
         height: 100%;
@@ -706,7 +708,7 @@ input[type=checkbox]:checked + label {
     }
 
     .intro-img {
-        height: 40vh;
+        height: 60vh;
         grid-area: intro-img;
         width: 100%;
     }
@@ -715,64 +717,10 @@ input[type=checkbox]:checked + label {
         grid-area: intro-txt;
         width: 80%;
         padding: 3em 0;
-    }
-    /*//////////Customer Service Section///////*/
-
-    .container {
-        width: 100%;
-        grid-template-columns: 1fr;
-        padding: 3em 0;
-        gap: 1em;
-    }
-
-    /*/////////Contact Section////////*/
-
-    .contact-container {
-        width: 95%;
-        grid-template-areas: 
-            "contact-header"
-            "contact-form"
-            "contact-info"
-        ;
-        padding: 3em;
-    }
-
-    .contact-info {
-        width: 100%;
-        gap: 1em;
-    }
-
-    .form-container {
-        margin-top: 4em;
-    }
-
-    .contact-section iframe {
-        height: 40vh;
-    }
-
-    .map {
-        height: 30vh;
-    }
-
-    /*/////////Testimonial Section////////*/
-
-    .testimonials {
-        padding: 0;
-    }
-
-    .wrapper {
-        width: 80%
-    }
-}
-
-@media only screen and (max-width: 428px) {
-    .intro-txt {
         text-align: center;
     }
-    
-    .intro-img {
-        height: 60vh;
-    }
+
+    /*//////////Customer Service Section///////*/
 
     .cs {
         padding: 1em 0;
@@ -782,13 +730,23 @@ input[type=checkbox]:checked + label {
         padding: 0;
     }
 
+    .container {
+        width: 100%;
+        grid-template-columns: 1fr;
+        padding: 3em 0;
+        gap: 1em;
+    }
+
+    /*//////CONTACT SECTION/////////*/
+
     .contact-container {
         width: 100%;
         padding: 3em 1em;
-    }
-
-    .contact-header {
-        
+        grid-template-areas: 
+            "contact-header"
+            "contact-form"
+            "contact-info"
+        ;
     }
 
     .contact-info {
@@ -798,6 +756,8 @@ input[type=checkbox]:checked + label {
             "opening-hours-text"
         ;
         text-align: center;
+        width: 100%;
+        gap: 1em;
     }
 
     .location-icon {
@@ -820,6 +780,7 @@ input[type=checkbox]:checked + label {
             "message"
             "button"
         ;
+        margin-top: 4em;
     }
 
     .styled-input.wide {
@@ -832,5 +793,19 @@ input[type=checkbox]:checked + label {
 
     .phone {
         width: 100%;
+    }
+
+    .map {
+        height: 30vh;
+    }
+
+    /*/////////Testimonial Section////////*/
+
+    .testimonials {
+        padding: 0;
+    }
+
+    .wrapper {
+        width: 80%
     }
 }
